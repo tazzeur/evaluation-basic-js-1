@@ -1,5 +1,14 @@
-var removeNegativeValue = function(values) {
-  // Your future job begins here ...
+var removeNegativeValue = function(input) {
+  if (input == undefined){
+    var results = [];
+    return results;
+  }
+  else{
+    var results = input.filter(function(filtre){
+        return filtre >= 0;
+    })
+    return results;
+  }
 }
 
 module.exports = {
